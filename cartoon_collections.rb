@@ -1,12 +1,8 @@
 def roll_call_dwarves(dwarves)
   # Your code here
-  let i = 0;
-  let retVal = ''; 
-  for(i = 0; i < dwarves.length; i++)
-  {
-    retVal += `${i+1}. ${dwarves[i]} ` 
-  }
-  return retVal;
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
+  end
 end
 
 def summon_captain_planet# code an argument here
